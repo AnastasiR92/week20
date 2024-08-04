@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/swapi.css" />
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <title>Swapi</title>
+  </head>
+  <body>
+    <a href="#"
+      ><img
+        id="logo"
+        src="https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-zvezdnie-voini-nadpis-oboi-19.jpg"
+    /></a>
+    <h1 id="main-title">Кого или что будем искать?</h1>
+    <form id="main-form">
+      <select id="type">
+        <option value="people">Люди</option>
+        <option value="films">Фильмы</option>
+        <option value="planets">Планеты</option>
+        <option value="species">Виды</option>
+        <option value="starships">Космические корабли</option>
+        <option value="vehicles">Транспортные средства</option>
+      </select>
+      <input type="text" id="id" name="id" placeholder="Введите номер" />
+      <button type="submit" id="button-go">Вперёд!</button>
+    </form>
+    <div id="loader" style="display: none">Идёт загрузка...</div>
+    <div id="add-container"></div>
+    <script src="swapi.js"></script>
+  </body>
+</html>
